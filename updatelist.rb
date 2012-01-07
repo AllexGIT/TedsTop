@@ -4,7 +4,7 @@ require 'open-uri'
 
 # output a file with the results
 File.open("ted.txt", "w+") do |f|
-(1..4).each do |page|
+(1..3).each do |page|
 
   # fetch ted talks from each page
   doc = Nokogiri.parse(open("http://www.ted.com/talks/list/page/#{page}/?orderedby=MOSTVIEWED").read)
